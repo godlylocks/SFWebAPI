@@ -11,8 +11,17 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping(value = "/rest/v1/SimpleController")
 public class SFWebAPIControllerSimple {
 
+    private static int numCalls;
+
     @RequestMapping(value = "/secretPhrase", method = RequestMethod.GET, consumes = "application/json")
     public String secretPhrase() {
+        numCalls++;
         return "My Secret Phrase";
+    }
+
+    @RequestMapping(value = "/numberOfCalls", method = RequestMethod.GET, consumes = "application/json")
+    public int numberOfCalls() {
+        numCalls++;
+        return numCalls;
     }
 }
