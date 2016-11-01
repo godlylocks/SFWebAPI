@@ -1,0 +1,11 @@
+
+
+
+sfSoap:
+  login:
+    username: "cody@objectpartners.com.wave"
+    password: "password1234"
+    securityToken: "sqtDi1E2XgDgITGp3ug7nEsk5"
+    loginUri: "https://login.salesforce.com/services/Soap/u/37.0"
+  config:
+    prettyPrintXml: true
